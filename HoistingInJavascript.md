@@ -44,6 +44,7 @@ console.log("Namaste JavaScript");
 Here this function gets treated like a variable and will be assigned with undefined in the memory allocation phase. 
 
 
+
 We can also define functions like below. Here also this function gets treated like a variable.
 
 var getName2 = function() {
