@@ -1,4 +1,4 @@
-<img width="491" alt="image" src="https://github.com/Gayathri229/JavaScript/assets/60467364/d30ba60e-cc3a-464e-b0a9-bc5ee9582b3d">Hoisting in JavaScript
+<img width="491" alt="image" src="https://github.com/Gayathri229/JavaScript/assets/60467364/d30ba60e-cc3a-464e-b0a9-bc5ee9582b3d">
 
 Lets take the below code for example:
 
