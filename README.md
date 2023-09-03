@@ -1,4 +1,4 @@
-Hoisting in JavaScript
+<img width="491" alt="image" src="https://github.com/Gayathri229/JavaScript/assets/60467364/d30ba60e-cc3a-464e-b0a9-bc5ee9582b3d">Hoisting in JavaScript
 
 Lets take the below code for example:
 
@@ -33,9 +33,20 @@ When we try printing a function without calling it like in the below example lin
 
 Arrow functions:
 
+
+<img width="491" alt="image" src="https://github.com/Gayathri229/JavaScript/assets/60467364/adc21182-bf39-483e-9486-3676dc76f498">
+
 Eg:
 var getName = () => {
 console.log("Namaste JavaScript");
 }
 
-Here this function gets treated like a variable and will be assigned with undefined in the memory allocation phase.
+Here this function gets treated like a variable and will be assigned with undefined in the memory allocation phase. 
+
+
+We can also define functions like below. Here also this function gets treated like a variable.
+
+var getName2 = function() {
+
+}
+
