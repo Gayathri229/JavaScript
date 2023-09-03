@@ -1,4 +1,4 @@
-a# JavaScript
+# JavaScript
 
 Notes from Akshay Saini YT channel:
 
@@ -99,7 +99,8 @@ When it encounters a function and another execution context is created, this exe
 
 <img width="287" alt="image" src="https://github.com/Gayathri229/JavaScript/assets/60467364/7eda9435-9de1-426a-b7f6-eac9ec38d847">
 
-
+Below shows how call stack works, when the code in the image is run
+<img width="556" alt="image" src="https://github.com/Gayathri229/JavaScript/assets/60467364/404dc147-b625-4a40-aef9-ca1ffb826dea">
 
 Call stack is also known by the below names:
 
