@@ -1,4 +1,4 @@
-Let and const declarations are hoisted
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/f1b867f2-63a3-4dec-a126-a80d36f0189b)Let and const declarations are hoisted
 
 When we try to access a "let" variable after initializing but before declaring a value, it throws "Reference error, Cannot access before initialization."
 
@@ -55,6 +55,47 @@ temporal dead zone to 0.
 
 
 Scope of Let and Const:
+Let and const are block scoped.
+A block is defined by {}. It is also known as compound statement. 
+
+We use blocks where JavaScript expects a single statement. Let's see the below example:
+
+if(true) -> here after the if condition, JS expects a single statement under the if condition, but we use {} to write multiple statements. Here {} is a block.
+
+
+Block scope:
+What all variables and functions we can access inside this block. 
+
+Here in the below image, we can see that b and c are stored in a different space that is reserved for the block. a is stored in global scope.
+Once the block is executed, let and const are no longer accessible but var can be accessed.
+![Screenshot 2023-09-19 185651](https://github.com/Gayathri229/JavaScript/assets/60467364/07546aa3-d88e-4857-84f4-58b93035b9ac)
+
+We can see that once the block is executed, the block scope is removed in the background.
+
+![Screenshot 2023-09-19 190516](https://github.com/Gayathri229/JavaScript/assets/60467364/45d46cb0-4857-46fe-938a-640309b9dc5c)
+
+
+Shadowing in JS:
+
+Let's take the below code for example, var a is assigned with 100 outside the block, the same var a is assigned with 10 inside the block, here the "a" inside the block is shadowing the "a" outside the block.
+Since var a is present in global scope, when we assign it with different value, it gets changed to the secondly assigned value.
+
+![Screenshot 2023-09-19 190920](https://github.com/Gayathri229/JavaScript/assets/60467364/ea79c26e-ded2-496c-bd9a-0b586efd7b61)
+
+
+Let's take the below example for let declaration,
+
+Here since let is block scoped, value of b is 100 outside the block and 20 inside the block. So b=20 is shadowing b=100. We can also see that, value 20 is in block scope in console and 100 is in a different scope [under script dropdown].
+
+![Screenshot 2023-09-19 191758](https://github.com/Gayathri229/JavaScript/assets/60467364/a9ad3fd9-6366-464c-8401-4292c28d783b)
+
+Same happens for const as well here, value of c inside the block is 30 and outside the block is 100. c=30 shadows c=100.
+
+
+
+Illegal shadowing:
+
+![Screenshot 2023-09-19 214024](https://github.com/Gayathri229/JavaScript/assets/60467364/a8d9bb23-dd61-4b03-89f3-640050aaa0fa)
 
 
 
