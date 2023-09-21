@@ -63,7 +63,7 @@ We use blocks where JavaScript expects a single statement. Let's see the below e
 if(true) -> here after the if condition, JS expects a single statement under the if condition, but we use {} to write multiple statements. Here {} is a block.
 
 
-Block scope:
+Block scope: [Block scope is different from function scope. Block scope: any block such as if/for/while loop. Function scope when a variable declared inside a function will not be visible outside the function.] 
 What all variables and functions we can access inside this block. 
 
 Here in the below image, we can see that b and c are stored in a different space that is reserved for the block. a is stored in global scope.
@@ -95,7 +95,44 @@ Same happens for const as well here, value of c inside the block is 30 and outsi
 
 Illegal shadowing:
 
+We can shadow a var using a var in a block, a let using a let in a block, but not a let using a var in a block as shown in the below example. 
+
 ![Screenshot 2023-09-19 214024](https://github.com/Gayathri229/JavaScript/assets/60467364/a8d9bb23-dd61-4b03-89f3-640050aaa0fa)
 
+Shadowing var using let in another block is also allowed but not the vice versa.
+
+![Screenshot 2023-09-21 080331](https://github.com/Gayathri229/JavaScript/assets/60467364/074c812d-0d1e-4ad7-848b-7a20ce5ee1cc)
+
+Let's go deep into this illegal shadowing, if we try to shadow let using var, we should not cross the boundaries/scope of let, this means let cannot be redeclared, so when we do that using var, error is thrown. 
+
+![Screenshot 2023-09-21 080600](https://github.com/Gayathri229/JavaScript/assets/60467364/cf840c63-3d73-4efa-8e7f-459463cf7943)
+
+But if we use the same var a inside a function, like in below image, it doesn't throw error as it doesn't interfere with the scope of let outside the function.
+
+![Screenshot 2023-09-21 080854](https://github.com/Gayathri229/JavaScript/assets/60467364/9a345718-578b-4fa7-9f30-0c6f3634d52b)
 
 
+Lexical scope:
+
+Block scope also follows lexical scope. In the below example, it has taken the nearest value to console.log and printed 200.
+
+![Screenshot 2023-09-21 081949](https://github.com/Gayathri229/JavaScript/assets/60467364/3e01cdff-0d07-400b-8fcd-23ee7f1fe549)
+
+And when we try to print it like the below example, it has printed 100.
+
+![Screenshot 2023-09-21 082106](https://github.com/Gayathri229/JavaScript/assets/60467364/9b6e46cf-416b-4852-b2fb-29be91b08027)
+
+Here, we can see there a block scopes for each time we declared a, a script and a global scope. 
+
+![Screenshot 2023-09-21 082533](https://github.com/Gayathri229/JavaScript/assets/60467364/868bfab6-d064-406d-9cb1-5622b9280bfc)
+
+
+Here, when we removed a=200 in the 3rd block and printed the value, it has printed 100. This shows it is following lexical scope chain in a block as well i.e has access to other blocks/outside blocks as well.
+
+![Screenshot 2023-09-21 083334](https://github.com/Gayathri229/JavaScript/assets/60467364/30135ec8-95c2-4d00-9b49-8189eaf6b343)
+
+
+
+Scope in function and arrow function:
+
+They work the same for both function and arrow function.
