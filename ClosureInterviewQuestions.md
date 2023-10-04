@@ -36,6 +36,7 @@ Calling outer()(), means calling the function inside outer here.
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/9172fd62-d885-40fa-b9e6-424cdfe60944)
 
 We can also do the above like the below image, both are same.
+
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/7e2f6ca6-e8c3-41dd-bd4a-72067ee68a84)
 
 
@@ -59,12 +60,47 @@ counter1();
 counter1();
 
 var counter2 = counter();
-counter1();
-counter1();
-counter1();
+counter2();
+counter2();
+counter2();
 
 
 This will work the same, even when we redeclare counter1 and call counter function or simply reassign counter function to counter1 itself like below image.
 
 ![Screenshot 2023-10-04 112624](https://github.com/Gayathri229/JavaScript/assets/60467364/067aadfe-073a-4b86-9f0e-114e92ca70ab)
 
+
+Disadvantages of Closure:
+
+1. Closure can lead to overconsumption of memory, and the values are not garbage collected till the program expires.
+2. If not handled properly it can lead to memory leaks, as the memory gets accumulated and can freeze the browser over time.
+
+
+Garbage collector:
+
+JS engine has garbage collector which is a program that frees up the unused variable's memory.
+
+How are closures and garbage collectors related?
+
+Let's take the below function, here b() would've formed a closure with a(), so below in the code we've assigned a() to y which means we could use x in the future which makes it not to be garbage collected for future use. 
+
+function a() {
+var x = 0; 
+return function b() {
+   console.log(x);
+}
+}
+var y = a();
+y();
+
+
+Some modern JS engines, do smart garbage collection, let's see the example below, here even though b forms closure with a and has access to values x and z, since z is not used anywhere, garbage collector removes z from memory and holds x for future use.
+
+function a() {
+var x = 0,z = 10; 
+return function b() {
+   console.log(x);
+}
+}
+var y = a();
+y();
