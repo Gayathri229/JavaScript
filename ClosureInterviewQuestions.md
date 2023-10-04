@@ -28,4 +28,78 @@ We can also fix this by using "var" declaration itself, that is by introducing a
 
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/8dd308ba-95b9-4625-b820-d573dafae423)
 
+Use of double paranthesis:
+
+Calling outer()(), means calling the function inside outer here. 
+
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/9172fd62-d885-40fa-b9e6-424cdfe60944)
+
+We can also do the above like the below image, both are same.
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/7e2f6ca6-e8c3-41dd-bd4a-72067ee68a84)
+
+
+Data Privacy using closures and separate closure concept:
+Here in counter() function, we have count variable which can only be used/incremented by calling the counter function and not otherwise.
+
+Another concept here is, we have called counter() and assigned it to counter1, now this would've formed a closure. When we try calling counter again as we've done in code and assigned it to counter2, this will form a separate closure with its own separate count variable. And this is why, when we print count value each time, it starts from 0 for both counter1 and counter2.
+
+
+function counter() {
+   var count=0;
+   return function incrementCounter() {
+      count++;
+      console.log(count);
+   }
+}
+
+var counter1 = counter();
+counter1();
+counter1();
+
+var counter2 = counter();
+counter1();
+counter1();
+counter1();
+
+
+
+This will work the same, even when we redeclare counter1 and call counter function or simply reassign counter function to counter1 itself.
+
+Use of double paranthesis:
+
+Calling outer()(), means calling the function inside outer here. 
+
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/9172fd62-d885-40fa-b9e6-424cdfe60944)
+
+We can also do the above like the below image, both are same.
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/7e2f6ca6-e8c3-41dd-bd4a-72067ee68a84)
+
+
+Data Privacy using closures and separate closure concept:
+Here in counter() function, we have count variable which can only be used/incremented by calling the counter function and not otherwise.
+
+Another concept here is, we have called counter() and assigned it to counter1, now this would've formed a closure. When we try calling counter again as we've done in code and assigned it to counter2, this will form a separate closure with its own separate count variable. And this is why, when we print count value each time, it starts from 0 for both counter1 and counter2.
+
+
+function counter() {
+   var count=0;
+   return function incrementCounter() {
+      count++;
+      console.log(count);
+   }
+}
+
+var counter1 = counter();
+counter1();
+counter1();
+
+var counter2 = counter();
+counter1();
+counter1();
+counter1();
+
+
+This will work the same, even when we redeclare counter1 and call counter function or simply reassign counter function to counter1 itself like below image.
+
+![Screenshot 2023-10-04 112624](https://github.com/Gayathri229/JavaScript/assets/60467364/067aadfe-073a-4b86-9f0e-114e92ca70ab)
 
