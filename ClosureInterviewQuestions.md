@@ -46,23 +46,7 @@ Here in counter() function, we have count variable which can only be used/increm
 
 Another concept here is, we have called counter() and assigned it to counter1, now this would've formed a closure. When we try calling counter again as we've done in code and assigned it to counter2, this will form a separate closure with its own separate count variable. And this is why, when we print count value each time, it starts from 0 for both counter1 and counter2.
 
-
-function counter() {
-   var count=0;
-   return function incrementCounter() {
-      count++;
-      console.log(count);
-   }
-}
-
-var counter1 = counter();
-counter1();
-counter1();
-
-var counter2 = counter();
-counter2();
-counter2();
-counter2();
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/d22e94d1-bc55-4518-a62d-dbef54596f90)
 
 
 This will work the same, even when we redeclare counter1 and call counter function or simply reassign counter function to counter1 itself like below image.
@@ -84,23 +68,9 @@ How are closures and garbage collectors related?
 
 Let's take the below function, here b() would've formed a closure with a(), so below in the code we've assigned a() to y which means we could use x in the future which makes it not to be garbage collected for future use. 
 
-function a() {
-var x = 0; 
-return function b() {
-   console.log(x);
-}
-}
-var y = a();
-y();
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/04905a8f-fd97-431b-aa9f-a6df16906d40)
 
 
 Some modern JS engines, do smart garbage collection, let's see the example below, here even though b forms closure with a and has access to values x and z, since z is not used anywhere, garbage collector removes z from memory and holds x for future use.
 
-function a() {
-var x = 0,z = 10; 
-return function b() {
-   console.log(x);
-}
-}
-var y = a();
-y();
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/b4209556-42ec-4840-80b5-1563cb916897)
