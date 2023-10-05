@@ -8,5 +8,7 @@ Callbacks help us to do asynchronous tasks in JS which is a synchronous, single-
 setTimeout is an example for callback function. The function we pass as argument for setTimeout is a callback function.
 
 Lets take the below example. 
+
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/3f094e35-57a0-41ad-bff0-8aedf7fc4835)
 
+Call stack is also called the Main thread.
