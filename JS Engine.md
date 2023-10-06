@@ -1,11 +1,13 @@
+JavaScript Run time environment:
 
+JS Engine is the heart of JS run time environment.
+![Screenshot 2023-10-06 184214](https://github.com/Gayathri229/JavaScript/assets/60467364/f7caddf0-9203-4e6d-9566-9eb4ad947783)
 
+Browser is able to run the JS code because it has JS run time environment. Every browser has its own JS engine. 
+JS Engine is nothing but a code written in low-level language. It takes the high level code written by us and gives the machine level code which can be executed by the machine. Google's V8 Engine is written in C++.
+We can create our own JS engine. The protocol is that it should follow the ECMAScript standards. 
 
-
-
-
-
-
+First JS Engine was developed by the creator of JS called SpyderMonkey.
 
 
 JS Engine Architecture:
