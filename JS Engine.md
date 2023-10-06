@@ -1,6 +1,6 @@
 JavaScript Run time environment:
 
-JS Engine is the heart of JS run time environment.
+JS run time environment has all the elements required to run JS. JS Engine is the heart of JS run time environment.
 ![Screenshot 2023-10-06 184214](https://github.com/Gayathri229/JavaScript/assets/60467364/f7caddf0-9203-4e6d-9566-9eb4ad947783)
 
 Browser is able to run the JS code because it has JS run time environment. Every browser has its own JS engine. 
