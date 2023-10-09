@@ -46,6 +46,7 @@ The Abstract Syntax Tree is sent to the Interpreter which converts high level in
 In some JS engines we have something called AOT.
 Ahead Of Time compilation - It takes a piece of code which is going to be executed later and optimizes it as much as it can. This also produces the byte code which goes to the execution phase. 
 
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/7e0c5eb1-96e5-4555-bca7-d3ccbd8895ed)
 
 EXECUTION:
 Execution is not possible with Memory heap and Call stack[these are present in JS Engine]. Memory heap is a place where all the memory is stored. It is constantly in sync with the call stack, garbage collector, etc. Memory heap is the place where all the functions and variables are assigned memory.
