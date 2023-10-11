@@ -25,3 +25,11 @@ Just for the sake to make it similar to map function, we are making few more cha
 For my understanding: Once we've added the calculate function to Array prototype, it has become a method like length/push() so we pass the argument to it which is the "logic" here and the array with which we call becomes its current instance and so don't need to specify as arr anymore and that's why "this" keyword came in here.
 
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/fedbcf87-f3f9-4e5d-a9c3-74d221cadd1e)
+
+
+MAP, FILTER AND REDUCE:
+
+We use Map in Arrays when we want to "transform" an array. Say we want to double/triple the values in the array.
+Map takes function as an argument. Below example, converts each input in the array to its binary code. 
+
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/d23d99ce-4065-4562-95bb-df8b49798480)
