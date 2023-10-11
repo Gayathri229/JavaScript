@@ -27,9 +27,46 @@ For my understanding: Once we've added the calculate function to Array prototype
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/fedbcf87-f3f9-4e5d-a9c3-74d221cadd1e)
 
 
-MAP, FILTER AND REDUCE:
+MAP:
 
 We use Map in Arrays when we want to "transform" an array. Say we want to double/triple the values in the array.
 Map takes function as an argument. Below example, converts each input in the array to its binary code. 
 
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/d23d99ce-4065-4562-95bb-df8b49798480)
+
+
+FILTER:
+
+Filter is used to filter out values from an array to obtain the required output. Below code filters out even values in the array. Function can be passed directly in the braces as well.
+
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/4fdab352-f64f-4267-92c6-8e2612f5210a)
+
+
+
+REDUCE:
+
+Reduce is used in a place where we need to use the values in the array to arrive at a single value. Say we need to find out the sum of the elements or greater of all elements.
+Here, we are finding the sum of elements. 
+The function we pass for reduce takes two inputs such as "Accumulator" and "Current". Reduce function takes two inputs, one is the function, second is the initial values we need to pass for the accumulator variable.
+In the findSum function, we have written the logic for finding the sum of the array. The same is implemented using reduce as well in the line acc = acc + curr where acc is initialized to 0 in the second argument of the reduce function.
+
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/6c407f73-0eb0-4d98-a86b-af3e4252828f)
+
+Example to find the max in an array
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/9fa15a41-25ff-4e93-8089-6509a953f499)
+
+
+Example to find the number of people with same age. Here, we need to arrive at a single value i.e count of people with same age i.e use reduce here. 
+For this, we have taken the accumulator to be an empty object. And if, acc does not have the object i.e say 26 since its the curr value, acc[26] is not present in the object we assign 1 to it denoting its first present. If acc[26] is already present we increment the value by 1.
+
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/41cade15-a075-4fe7-9ade-287ecfff7d1c)
+
+
+
+We can also chain map, filter and reduce. Let's take the below example. We want to print the first names of people with age less than 30. So first we filter using age and upon that result we use map to get the first names alone.
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/74a3b9f3-5756-4e27-ad8a-be8cb33e1a58)
+
+
+Same example using reduce
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/b29a3eaa-a81e-4d0a-8029-1ec8a7592e48)
+
