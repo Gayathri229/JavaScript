@@ -22,4 +22,6 @@ The calculate function in the above example, is similar to map function. Line nu
 
 Just for the sake to make it similar to map function, we are making few more changes to the calculate function and add it to the Array prototype. So now, this calculate function will be available as a property to all/any array we declare. Here, we can replace the "array[i]" in calculate function to "this" keyword as the array with which we call the function gets passed there.
 
+For my understanding: Once we've added the calculate function to Array prototype, it has become a method like length/push() so we pass the argument to it which is the "logic" here and the array with which we call becomes its current instance and so don't need to specify as arr anymore and that's why "this" keyword came in here.
+
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/fedbcf87-f3f9-4e5d-a9c3-74d221cadd1e)
