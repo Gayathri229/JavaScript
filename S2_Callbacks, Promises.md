@@ -58,10 +58,10 @@ It is done through Promise chaining.
 This  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/6dca7740-06cc-42fe-a75b-bbd8f3bac6f1)
 
-Equals  This. Promise chaining. Always don't forget to return the promise for the data to flow in Promise chaining. Else we might lose some data and the promise chain won't work as expected.
+Equals  This. Promise chaining. Always don't forget to return the promise for the data to flow in Promise chaining. Else we might lose some data and the promise chain won't work as expected.  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/93f48e84-b0b6-4434-8bcb-bfc7906e6925)
 
-With Arrow function, instead of normal function  
+With Arrow function, instead of normal function   
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/e4a1636a-a60c-4101-b126-616624ed513c)
 
 
