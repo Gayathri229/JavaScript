@@ -94,3 +94,11 @@ We should always write a catch to handle the error if the promise gets rejected.
   
 Output: when validateCart returned false  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/1cfc4dff-935a-4f56-a3ff-212167681b24)
+
+
+Promise chaining:  
+
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/8972ff35-9dcd-466f-93e9-962a47a817de)  
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/c9a6c8a5-c617-4725-9a27-e0d0044f56cf)
+
+
