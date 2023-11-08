@@ -82,14 +82,14 @@ We can create a Promise using the Promise constructor. The Promise constructor t
 Promise creation in createOrder function:  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/6fff0aff-44d4-42ce-835f-dc73574bbaf8)
 
-Producing promise:
+Producing promise:  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/a2afd384-b038-4489-8b82-b1a48425f15a)
 
 Output: [for resolved promise]
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/8ab31980-326f-41d9-a349-e509503f593b)
 
 
-We should always write a catch to handle the error if the promise gets rejected. catch() is also a method that is available with the Promise object to handle rejection errors.
+We should always write a catch to handle the error if the promise gets rejected. catch() is also a method that is available with the Promise object to handle rejection errors.  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/55588ae1-7ee9-4dce-8831-16825ee39869)  
 
 Output: when validateCart returned false  
