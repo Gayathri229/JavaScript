@@ -97,8 +97,20 @@ Output: when validateCart returned false
 
 
 Promise chaining:  
-
+Here, we've returned the promise to the next chain, creating a promise chain. And this is how we pass the data in the promise chain. Here, the catch method at the end will handle any error caused in the whole promise chain BECAUSE it's placed at the end of the chain. 
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/8972ff35-9dcd-466f-93e9-962a47a817de)  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/c9a6c8a5-c617-4725-9a27-e0d0044f56cf)
 
+Output:  
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/62381991-9d3e-442a-98eb-e99afea25230)
 
+
+Let's say we have catch after the first then method, it'll handle only the error caused by the first then. The then methods placed after the catch will be called no matter what.  
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/83831e1e-c502-4c72-ba96-e23d815f06e1)
+
+So, in the above image, createOrder was set to false and catch was placed right after the first then, in the output we can see that cart is not valid is printed and still payment was successful is printed.
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/5e467e9a-266d-4adb-81af-94441423996a)
+
+
+Just another example for catch at different places,  
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/f4ed80d0-f631-46b9-9602-078367bef974)
