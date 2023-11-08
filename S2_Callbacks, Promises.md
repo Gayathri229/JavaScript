@@ -51,7 +51,6 @@ MDN Definition [TO ANSWER IN INTERVIEWS]: Promise is an Object representing the 
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/893ec340-92ab-4154-a47f-2b403cdcfb02)
 
 
-
 Callback Hell handling in Promise:
 
 It is done through Promise chaining. 
@@ -64,3 +63,9 @@ Equals  This. Promise chaining. Always don't forget to return the promise for th
 
 With Arrow function, instead of normal function  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/e4a1636a-a60c-4101-b126-616624ed513c)
+
+
+HOMEWORK:  
+What is a promise? A Promise is an Object which represents the eventual completion or failure of an async operation.  
+  
+Why promises are used? Promises help to overcome the challenges when using a Callback function i.e. callback hell and inversion of control. So, the promise guarantees us that it'll be definitely executed 100% of the time with either success or pending or failure and only once. This resolves Inversion of control. And to resolve callback hell we can use callback chaining using "then()" function by attaching callback functions to the promise object which will in turn return another promise object to its next callback function and so on.
