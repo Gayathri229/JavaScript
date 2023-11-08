@@ -69,3 +69,21 @@ HOMEWORK:
 What is a promise? A Promise is an Object which represents the eventual completion or failure of an async operation.  
   
 Why promises are used? Promises help to overcome the challenges when using a Callback function i.e. callback hell and inversion of control. So, the promise guarantees us that it'll be definitely executed 100% of the time with either success or pending or failure and only once. This resolves Inversion of control. And to resolve callback hell we can use callback chaining using "then()" function by attaching callback functions to the promise object which will in turn return another promise object to its next callback function and so on.
+
+
+  
+
+
+Creating Promises:  
+We can create a Promise using the Promise constructor. The Promise constructor takes a function with two arguments resolve and reject. These arguments are given by JavaScript by the design of Promise API.
+
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/78fff741-400a-4417-87c4-a53014e65b38)
+
+Promise creation in createOrder function:  
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/6fff0aff-44d4-42ce-835f-dc73574bbaf8)
+
+
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/a2afd384-b038-4489-8b82-b1a48425f15a)
+
+
+
