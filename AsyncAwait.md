@@ -37,6 +37,24 @@ Output: Here we could see that Namaste Javascript was printed first, then after 
 Eg: With using Await  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/46d1a78f-a75d-449d-8158-c42d05b879b1)  
 
-Output:  Here, we can see that Promise resolved is printed first, then Namaste Javascript. So here, JS engine waits 10s till the promise is resolved.  
+Output:  Here, we can see that Promise resolved is printed first, then Namaste Javascript. So here, JS engine waits for 10s till the promise is resolved.  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/52f070e9-0d2e-4510-a620-9e11b902a925)
+
+If we have a line above the await, that line will be printed immediately without any wait, but the lines below await are printed only after the wait time i.e. 10s
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/002f9152-2f12-4a1d-b924-bb70dc7cb188)  
+
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/cf0adc44-7636-4cbf-a03b-3f935bf505a5)
+  
+  
+Let's see an example where we have to resolve one promise twice:  
+
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/0e6ec9db-3a4b-46d7-bccf-5977ec654e1f)  
+  
+  
+So, let's take an example where we have to resolve the same promise twice. The promise has a wait time of 10 seconds. As we are resolving the same promise twice, it means we have to wait for the same time to resolve both promises. So, when we run the program, Hello world gets printed first, as there is no await before that line. And in line number 11, the function gets suspended and gets removed from call stack. After 10 seconds, the function gets back into callstack after the promise is resolved and prints both values val and val2. This is because both of them have the same wait time and it has already waited 10s to resolve the first promise. So, behind the scenes the call stack is not blocked by the handlePromise method instead it gets suspended each time it sees a await keyword and gets back in after the time is over. 
+
+
+What if we have 2 promises with different wait time p1 - 10, p2 - 5
+p1-5, p2-10
+
 
