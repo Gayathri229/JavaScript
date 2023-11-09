@@ -83,3 +83,13 @@ We use try catch to handle errors when using async await.
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/b678d8c7-0520-479c-bbc6-a610ea139338)
 
 
+We can also handle error by attaching the catch method to the function which returns a promise like in old methods.  
+
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/1677085e-ca9d-4400-b954-a217f27c6464)
+
+Async await vs Promise.then().catch():  
+Async await is just a Syntactic sugar of promise.then().catch(). Behind the scenes, JS is using Promise only. So, the only change is in the code that we write. We don't need to do Promise chaining or .then with callback functions.  
+  
+  
+Interview Questions:  
+What is async await?  
