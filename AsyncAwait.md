@@ -64,15 +64,15 @@ Here, p1 gets printed first, then the function gets suspended for the next 5secs
 What if we had 2 different promises with, p1-10s, p2-5s?  
   
 Since, the function would've already got suspended for 10s for p1, so it doesn't wait for another 5s, as the 5s got already included in the 10s suspension. It just prints both the values right after p1 gets resolved. 
-
-    
-
-How Fetch Works?
-The Fetch method given by the browser returns a Promise. 
-Fetch returns the response once the Promise is resolved. The Response will be a response object which is a readable stream. To convert this to json we use ".json".
-This .json is again a Promise. 
   
-![image](https://github.com/Gayathri229/JavaScript/assets/60467364/584d655b-e9a6-4296-817f-9d4fb5c397a6)
+   
+  
+How Fetch Works?  
+The Fetch method given by the browser returns a Promise.  
+Fetch returns the response once the Promise is resolved. The Response will be a response object which is a readable stream. To convert this to json we use ".json".  
+This .json is again a Promise.  
+  
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/584d655b-e9a6-4296-817f-9d4fb5c397a6)  
 
 
 
