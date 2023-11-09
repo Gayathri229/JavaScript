@@ -114,3 +114,85 @@ So, in the above image, createOrder was set to false and catch was placed right 
 
 Just another example for catch at different places,  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/f4ed80d0-f631-46b9-9602-078367bef974)
+   
+  
+  
+HOMEWORK CODE:  
+  
+const cart = ["shoes", "pants", "kurta"];  
+  
+createOrder(cart)  
+ .then(function(orderId) {  
+  console.log(orderId);  
+  return orderId;  
+})  
+ .then(function(orderId) {  
+  return proceedToPayment(orderId);  
+ })  
+ .then(function(paymentInfo) {  
+  return showOrderSummary(paymentInfo);  
+ })  
+ .then(function(updateWallet) {  
+  return updateWalletAmount(updateWallet);  
+ })  
+ .then(function(result) {  
+  console.log(result);  
+ })  
+  .catch(function(err) {  
+ console.log(err.message);  
+});  
+
+function updateWalletAmount(updateWallet) {  
+ return new Promise(function(resolve,reject) {  
+  if(updateWallet.status==="success") {  
+   resolve("Wallet has been updated");  
+  }  
+  else {  
+   reject(new Error("Something went wrong"));  
+  }  
+ })  
+}  
+
+
+function showOrderSummary(paymentInfo) {  
+ return new Promise (function(resolve,reject){  
+  if(paymentInfo.paymentStatus===1){  
+   resolve({status:"success"});  
+  }  
+  else {  
+   reject(new Error("Something went wrong"));  
+  }  
+ })  
+}  
+
+function proceedToPayment(orderId) {  
+ return new Promise(function(resolve, reject) {  
+  if(orderId) {  
+   resolve({paymentStatus: 1, message: "Payment successful"});  
+  }  
+  else {  
+   reject(new Error("Payment failed"));  
+  }  
+ });  
+}  
+
+function createOrder(cart) {  
+ const pr = new Promise(function(resolve, reject) {  
+  if(!validateCart(cart)) {  
+   const err = new Error("Cart is not valid");  
+   reject(err);  
+  }  
+  const orderId = "12345";  
+  if(orderId) {  
+   setTimeout(function() {  
+       resolve(orderId);  
+   }, 5000);  
+  }  
+ });  
+
+ return pr;  
+}  
+
+function validateCart() {  
+ return true;  
+}  
