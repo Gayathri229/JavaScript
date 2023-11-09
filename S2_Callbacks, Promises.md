@@ -97,7 +97,7 @@ Output: when validateCart returned false
 
 
 Promise chaining:  
-Here, we've returned the promise to the next chain, creating a promise chain. And this is how we pass the data in the promise chain. Here, the catch method at the end will handle any error caused in the whole promise chain BECAUSE it's placed at the end of the chain. 
+Here, we've returned the promise to the next chain, creating a promise chain. And this is how we pass the data in the promise chain. Here, the catch method ATTACHED at the end will handle any error caused in the whole promise chain BECAUSE it's placed at the end of the chain. NOTICE THAT WE"RE NOT PASSING THE THEN/CATCH FUNCTION WE'RE ATTACHING IT.
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/8972ff35-9dcd-466f-93e9-962a47a817de)  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/c9a6c8a5-c617-4725-9a27-e0d0044f56cf)
 
