@@ -19,6 +19,7 @@ Using Async with Await:
 Async Await combo is used to handle Promises. 
 Await is a keyword that can be used only inside an Async function.
 We write the Await keyword in front of a Promise. And it resolves the Promise.  
+Just For my understanding: We used ".then" to get the value from the Promise object, here Await does it for us, so without using then we directly print the result or value needed.
 
 Without Await:  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/a8074504-c005-4aef-afda-8bdd9da96595)
