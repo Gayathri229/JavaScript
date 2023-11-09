@@ -108,7 +108,7 @@ Output:
 Let's say we have catch after the first then method, it'll handle only the error caused by the first then. The then methods placed after the catch will be called no matter what.  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/83831e1e-c502-4c72-ba96-e23d815f06e1)
 
-So, in the above image, createOrder was set to false and catch was placed right after the first then, in the output we can see that cart is not valid is printed and still payment was successful is printed.
+So, in the above image, createOrder was set to false and catch was placed right after the first then, in the output we can see that cart is not valid is printed and still payment was successful is printed.  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/5e467e9a-266d-4adb-81af-94441423996a)
 
 
