@@ -2,7 +2,7 @@ ASYNC:
   
 Async is a KEYWORD that is written before a function to make it an async function.  
 Async function always returns a promise. If we don't return a Promise, it'll take the value, wrap it inside a promise, and then return the Promise.  
-Eg:  Returns a String
+Eg:  Returns a String  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/f3bc18f1-da34-44a3-97eb-dd0c86203062)  
   
 Output:  
