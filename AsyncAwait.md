@@ -40,7 +40,7 @@ Eg: With using Await
 Output:  Here, we can see that Promise resolved is printed first, then Namaste Javascript. So here, JS engine waits for 10s till the promise is resolved.  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/52f070e9-0d2e-4510-a620-9e11b902a925)
 
-If we have a line above the await, that line will be printed immediately without any wait, but the lines below await are printed only after the wait time i.e. 10s
+If we have a line above the await, that line will be printed immediately without any wait, but the lines below await are printed only after the wait time i.e. 10s  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/002f9152-2f12-4a1d-b924-bb70dc7cb188)  
 
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/cf0adc44-7636-4cbf-a03b-3f935bf505a5)
@@ -65,4 +65,16 @@ What if we had 2 different promises with, p1-10s, p2-5s?
   
 Since, the function would've already got suspended for 10s for p1, so it doesn't wait for another 5s, as the 5s got already included in the 10s suspension. It just prints both the values right after p1 gets resolved. 
 
+    
+
+How Fetch Works?
+The Fetch method given by the browser returns a Promise. 
+Fetch returns the response once the Promise is resolved. The Response will be a response object which is a readable stream. To convert this to json we use ".json".
+This .json is again a Promise. 
+  
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/584d655b-e9a6-4296-817f-9d4fb5c397a6)
+
+
+
+Real World Examples:  
 
