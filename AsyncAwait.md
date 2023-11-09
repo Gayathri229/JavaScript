@@ -1,7 +1,7 @@
 ASYNC:  
   
 Async is a KEYWORD that is written before a function to make it an async function.  
-Async function always returns a promise. If we don't return a Promise, it'll take the value, wrap it inside a promise, and then return the Promise.  
+Async function always returns a PROMISE. If we don't return a Promise, it'll take the value, wrap it inside a promise, and then return the Promise.  
 Eg:  Returns a String  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/f3bc18f1-da34-44a3-97eb-dd0c86203062)  
   
@@ -67,7 +67,8 @@ What if we had 2 different promises with, p1-10s, p2-5s?
 Since, the function would've already got suspended for 10s for p1, so it doesn't wait for another 5s, as the 5s got already included in the 10s suspension. It just prints both the values right after p1 gets resolved. 
   
    
-  
+Real World Examples:  
+
 How Fetch Works?  
 The Fetch method given by the browser returns a Promise.  
 Fetch returns the response once the Promise is resolved. The Response will be a response object which is a readable stream. To convert this to json we use ".json".  
@@ -76,6 +77,9 @@ This .json is again a Promise.
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/584d655b-e9a6-4296-817f-9d4fb5c397a6)  
 
 
+Error handing:  
+We use try catch to handle errors when using async await.  
 
-Real World Examples:  
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/b678d8c7-0520-479c-bbc6-a610ea139338)
+
 
