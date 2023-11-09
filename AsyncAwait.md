@@ -49,12 +49,20 @@ If we have a line above the await, that line will be printed immediately without
 Let's see an example where we have to resolve one promise twice:  
 
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/0e6ec9db-3a4b-46d7-bccf-5977ec654e1f)  
-  
-  
+
+Output:  
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/9c2fb9a4-e81a-444a-aa27-1885d34c06c2)  
+
+Explanation:    
 So, let's take an example where we have to resolve the same promise twice. The promise has a wait time of 10 seconds. As we are resolving the same promise twice, it means we have to wait for the same time to resolve both promises. So, when we run the program, Hello world gets printed first, as there is no await before that line. And in line number 11, the function gets suspended and gets removed from call stack. After 10 seconds, the function gets back into callstack after the promise is resolved and prints both values val and val2. This is because both of them have the same wait time and it has already waited 10s to resolve the first promise. So, behind the scenes the call stack is not blocked by the handlePromise method instead it gets suspended each time it sees a await keyword and gets back in after the time is over. 
 
 
-What if we have 2 promises with different wait time p1 - 10, p2 - 5
-p1-5, p2-10
+Let's take another example where we have to resolve 2 different promises, p1 with 5s, p2 with 10s
+
+Here, p1 gets printed first, then the function gets suspended for the next 5secs, and then in 5s the second promise gets resolved.
+
+What if we had 2 different promises with, p1-10s, p2-5s?  
+  
+Since, the function would've already got suspended for 10s for p1, so it doesn't wait for another 5s, as the 5s got already included in the 10s suspension. It just prints both the values right after p1 gets resolved. 
 
 
