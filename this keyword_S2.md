@@ -9,11 +9,11 @@ In nodeJS, its global.
 
 // inside a function  
 -> strict mode:  
-![image](https://github.com/Gayathri229/JavaScript/assets/60467364/c0fe9e0e-9f5c-4f57-88e2-03c232df4382)
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/7785a0d1-6248-46e5-81a4-6f646c906e7f)
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/68654b36-a3e5-4e8c-8c3c-44dac6f978ab)
 
 -> non-strict mode:  
-![image](https://github.com/Gayathri229/JavaScript/assets/60467364/f0af376b-6e2f-4247-a3c2-17e07e27a429)
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/fa177e27-6f37-4665-8209-bd743dd42646)
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/f112c22b-6469-413b-b002-33242964667f)
 
 So, by default value of this keyword inside function is "UNDEFINED"
