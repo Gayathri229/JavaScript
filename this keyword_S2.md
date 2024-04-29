@@ -28,6 +28,8 @@ in non-strict mode substitution happens
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/41c12efe-a1e1-4ac9-a6fa-19c4bd7bb195)  
 
 
+
+
 case 3: //this inside object's method  
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/6c3af4d5-afd6-426a-8c2c-6f15037cce58)
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/00c1c7ce-e1bb-4ba2-9a01-3a6d10dda840)
