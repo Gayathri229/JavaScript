@@ -22,6 +22,16 @@ So, by default value of this keyword inside function is "UNDEFINED"
 case 2.1: // this keyword value depends on how the function is called as well  
 Note: strict mode in screenshot
 ![image](https://github.com/Gayathri229/JavaScript/assets/60467364/7d6ffbfa-9e6b-4505-be0d-521696935611)
-![image](https://github.com/Gayathri229/JavaScript/assets/60467364/b790c033-a198-47a5-8097-0895545f91f5)
-in non-strict mode substitution happens 
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/b790c033-a198-47a5-8097-0895545f91f5)  
+  
+in non-strict mode substitution happens  
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/41c12efe-a1e1-4ac9-a6fa-19c4bd7bb195)  
+
+
+case 3: //this inside object's method  
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/6c3af4d5-afd6-426a-8c2c-6f15037cce58)
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/c37e88fe-5157-4186-a578-349f3ea3841d)
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/00c1c7ce-e1bb-4ba2-9a01-3a6d10dda840)
+
+
 
