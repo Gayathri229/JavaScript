@@ -18,3 +18,10 @@ In nodeJS, its global.
 
 So, by default value of this keyword inside function is "UNDEFINED"
 
+
+this keyword value depends on how the function is called as well
+Note: strict mode in screenshot
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/7d6ffbfa-9e6b-4505-be0d-521696935611)
+![image](https://github.com/Gayathri229/JavaScript/assets/60467364/b790c033-a198-47a5-8097-0895545f91f5)
+
+
